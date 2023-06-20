@@ -1,0 +1,19 @@
+header {
+    background-color: #753140;
+    text-align: center;
+    padding: 1px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#headerTitle{
+    font-size:250%
+}
+
+body{
+    background-color: #317566 ;
+}
