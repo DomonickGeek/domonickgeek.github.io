@@ -1,5 +1,9 @@
+@font-face{ 
+    font-family: MGS; 
+    src:url('../fonts/metag.ttf')}
+
 header {
-    background-color: #753140;
+    background-color: #ff4747;
     text-align: center;
     padding: 1px;
     margin-top: -10px;
@@ -11,9 +15,54 @@ header {
 }
 
 #headerTitle{
-    font-size:250%
+    font-family:MGS;
+    font-size:250%;
 }
 
+html{
+    min-height: 100%;
+    position: relative;
+}
 body{
-    background-color: #317566 ;
+    background-color: #ffffff;
+}
+
+a:link, a:visited{
+    font-family:MGS;
+    background-color: #ffffff;
+    padding:15px 25px;
+    color:black;
+    text-decoration: none;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    left:10;
+}
+
+.bodyH1{
+    text-align:center;
+    font-family:Bahnschrift;
+}
+
+h2{
+    font-family:consolas;
+    font-size:175%;
+}
+
+.bodyParagraph{
+    max-width: 35%;
+    font-size: large;
+    font-family:Bahnschrift;
+}
+
+.boxContainer{
+    display:flex;
+}
+
+#geekSIColumn{
+    flex:1;
 }
