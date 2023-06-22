@@ -1,3 +1,4 @@
+/***************Global Styling*******************/
 @font-face{ 
     font-family: MGS; 
     src:url('../fonts/metag.ttf')}
@@ -27,12 +28,16 @@ body{
     background-color: #ffffff;
 }
 
-a:link, a:visited{
+.navLinks{
     font-family:MGS;
     background-color: #ffffff;
     padding:15px 25px;
     color:black;
     text-decoration: none;
+}
+
+a:link, a:visited{
+    color:black;
 }
 
 footer{
@@ -54,15 +59,43 @@ h2{
 }
 
 .bodyParagraph{
-    max-width: 35%;
+    margin-top: -10px;
     font-size: large;
     font-family:Bahnschrift;
 }
 
-.boxContainer{
+.flex-container{
+    display:flex;
+    flex-direction:column
+
+}
+
+/***************index.html Styling*******************/
+#quizContainer{
+    visibility:hidden;
+}
+
+/***************projects.html Styling*******************/
+#arcvaleColumn{
+    margin-left:25%;
+}
+
+#row1{
     display:flex;
 }
 
-#geekSIColumn{
-    flex:1;
+#row2{
+    display:flex;
+    flex-direction:column;
 }
+
+
+/***************aboutme.html Styling*******************/
+#randomGoalsContainer{
+    margin-top:20%;
+}
+
+#interestColumn{
+    max-width:100%;
+}
+

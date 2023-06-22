@@ -5,21 +5,40 @@
         <link rel="stylesheet" href="stylesheets/globalStyle.css">
     </head>
 <body>
+    <script src="scripts/quiz.js"></script>
     <header>
         <h1 id="headerTitle">
             NATE'S WEBSITE
         </h1>
         <nav>
-            <a title="Link for Home Page" href="index.html">Home Page</a>
-            <a title="Link for About Me Page" href="pages/aboutme.html">About Me</a>
-            <a title="Link for My Projects Page" href="pages/projects.html">My Projects</a>
+            <a title="Link for Home Page" href="index.html" class="navLinks">Home Page</a>
+            <a title="Link for About Me Page" href="pages/aboutme.html" class="navLinks">About Me</a>
+            <a title="Link for My Projects Page" href="pages/projects.html" class="navLinks">My Projects</a>
         </nav>
     </header>
-<h1 class="bodyH1">Home</h1>
-<img src="images/me.png" alt="me" width="255" height="255">
-<footer>
-    <p>Site By Nathan Wallen</p>
-</footer>
+    <h1 class="bodyH1">Home</h1>
+    <input id="quizStarter" type="image" src="images/me.png" onclick="runQuiz()" alt="me" width="255" height="255">
+    <div id="quizContainer">
+        <h2>Quiz</h2>
+        <div id="question1Container">
+            <p>What did I primarily want to do as a career growing up?</p>
+            <div>
+                <input type="radio" name="childHoodCareer" id="careerChoice1" value="wrestler">
+                <label for="careerChoice1">Wrestler</label>
+                <input type="radio" name="childHoodCareer" id="careerChoice2" value="writer">
+                <label for="careerChoice2">Writer</label>
+                <input type="radio" name="childHoodCareer" id="careerChoice3" value="astronaut">
+                <label for="careerChoice3">Astronaut</label>
+                <input type="radio" name="childHoodCareer" id="careerChoice4" value="programmer">
+                <label for="careerChoice4">Programmer</label>
+            </div>
+            <button type="button" class="submitButton">Submit</button>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Site By Nathan Wallen</p>
+    </footer>
 
 </body>
 </html>

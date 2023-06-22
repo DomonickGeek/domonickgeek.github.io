@@ -10,31 +10,47 @@
             NATE'S WEBSITE
         </h1>
         <nav>
-            <a title="Link for Home Page" href="../index.html">Home Page</a>
-            <a title="Link for About Me Page" href="aboutme.html">About Me</a>
-            <a title="Link for My Projects Page" href="projects.html">My Projects</a>
+            <a title="Link for Home Page" href="../index.html" class="navLinks">Home Page</a>
+            <a title="Link for About Me Page" href="aboutme.html" class="navLinks">About Me</a>
+            <a title="Link for My Projects Page" href="projects.html" class="navLinks">My Projects</a>
         </nav>
     </header>
     <h1 class="bodyH1">About Me</h1>
-    <div class="content">
-        <h2>Who I am</h2>
-        <p class="bodyParagraph">My name is Nathan Wallen and I'm a Senior over at Florida State 
-            University studying Computer Science with a minor in Japanese.
-        </p>
-        <h2>Interest</h2>
-        <p class="bodyParagraph">
-            I have a passtion for programming and am currently exploring what specific industries/technologies interest me the most to possibly specialzie in.
-            <br>Outside of school I have an interest in video games and other creative media. I remember in middle school I wanted to be writer but I never really pursued an interest in it, 
-            <br>but part of me has always wanted to be able to work in an industry where I can utilize both my own creative freedom and ideas along with an actual skillset to help bring it to life.
-        </p>
-        <h2>Hobbies</h2>
-        <p class="bodyParagraph">
-            Video games have always been a main hobby of mine and lately I've been playing Middle Earth: Shadow of Mordor, Pokemon Rogue, and my favorite fighting game Guilty Gear XX Accent Core Plus R (long name I know).   
-            <br>Over the last couple years a bunch of my friends and I have gotten to attend Community Effort Orlando (CEO) every year which is one of the major fighting game tournaments in the United States, especially in this region.
-            <br>Some other hobbies of mine that I wish I found more time for include playing the bass and writing.
-        </p>
-        <h2>Random Goals</h2>
-        <pre class="bodyParagraph">
+    <div class="flex-container">
+        <div id="row1">
+            <div id="whoIAmColumn">
+                <h2>Who I am</h2>
+                <p class="bodyParagraph">My name is Nathan Wallen and I'm a Senior over at Florida State 
+                    University studying Computer Science with a minor in Japanese.
+                    <br> I was born and raised in the United States but my family's background is from Jamaica, though I didn't inherit any patois.
+                    <img src="../images/Flag-Jamaica.png" height="25%" width="25%">
+                </p>
+            </div><!--End of whoIAmColumn-->
+            
+            <div id="interestColumn">
+                <h2>Interest</h2>
+                <p class="bodyParagraph">
+                    I have a passtion for programming and am currently exploring what specific industries/technologies interest me the most to possibly specialzie in.
+                    <br>Outside of school I have an interest in video games and other creative media. 
+                    <br>I remember growing up I wanted to be writer but I never really pursued an interest in it, 
+                    <br>but part of me has always wanted to be able to work in an industry 
+                    <br>where I can utilize both my own creative freedom and ideas along with an actual skillset to help bring it to life.
+                </p>
+            </div><!--End of interestColumn-->
+        </div><!--End of row1-->
+        
+        <div id="row2">
+            <h2>Hobbies</h2>
+            <p class="bodyParagraph">
+                Video games have always been a main hobby of mine and lately I've been playing Middle Earth: Shadow of Mordor, Pokemon Rogue, and my favorite fighting game Guilty Gear XX Accent Core Plus R (long name I know).   
+                <br>Over the last couple years a bunch of my friends and I have gotten to attend Community Effort Orlando (CEO) every year which is one of the major fighting game tournaments in the United States, especially in this region.
+                <br>Some other hobbies of mine that I wish I found more time for include playing the bass and writing.
+            </p>
+            <img src="../images/ceo.jpeg" width="45%" height="45%">
+        </div><!--End of row2-->
+        <div id="randomGoalsContainer">
+            <h2>Random Goals</h2>
+            <pre class="bodyParagraph">
 1)Get on Hot Ones with Sean Evans.
     a)To do this I have to be rich and famous so.
 2)Get rich and famous.
@@ -42,7 +58,8 @@
 4)Open an arcade/comic shop.
 5)Go solo traveling around a country.
 6)Thats all I got so far.
-        </pre>
+            </pre>
+        </div><!--End of randomGoalsContainer div-->
         </div><!--End of content div-->
     
     <footer>
