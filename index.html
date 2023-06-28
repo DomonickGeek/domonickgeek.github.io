@@ -17,8 +17,8 @@
         </nav>
     </header>
     <h1 class="bodyH1">Home</h1>
-    <input id="quizStarter" type="image" src="images/me.png" onclick="runQuiz()" alt="me" width="255" height="255">
-    <div id="quizContainer">
+    <input id="quizStarter" type="image" src="images/me.png" onclick="runQuiz()" alt="me" width="255" height="255" role="button">
+    <div id="quizContainer" hidden="true">
         <h2>Quiz</h2>
         <div id="question1Container">
             <p>What did I primarily want to do as a career growing up?</p>
@@ -32,7 +32,8 @@
                 <input type="radio" name="childHoodCareer" id="careerChoice4" value="programmer">
                 <label for="careerChoice4">Programmer</label>
             </div>
-            <button type="button" class="submitButton">Submit</button>
+            <button type="button" class="submitButton" onclick="checkAnswer()">Submit</button>
+            <h4 id="resultsDisplay"></h4>
         </div>
         
     </div>
@@ -42,19 +43,3 @@
 
 </body>
 </html>
-
-
-<!---https://pages.github.com/ this is a good little intro to Github using your new accounts - on Part ? select Github Desktop under 'What git client are you using?'
-Once you have that done please send your .io link to me in Slack so I can see what you built.
-Use Github Pages and VS Code (Or equivalent) to make a website:
-Implement a Home Page with a picture of you
-Implement an 'about me' page
-Implement a folder structure to store images (and files if you'd like to include them)
-Implement a global style sheet
-Implement a 'my projects' page
-Implement a header and footer consistent across the website
-Bonus points if it scrolls with the page
-These may help:
-https://www.w3schools.com/html/
-https://www.w3schools.com/css/default.asp
--->
